@@ -1,15 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Capital Partners | Investment Management</title>
+  <meta name="description" content="Apex Capital Partners provides disciplined investment management, wealth advisory, and long-term growth strategies.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              900: '#0b1b33',
+              800: '#11284d',
+              700: '#163a6b',
+              500: '#2563eb'
+            }
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-    <a class="bg-red-400 m1 px-1" href="index.html">Home</a>
-    <a class="bg-red-400 text-gray-200" href="about.html">About</a>
-    <br>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente quis magnam atque ex eos quibusdam accusantium mollitia, veniam natus, culpa nemo harum nisi recusandae officiis adipisci quisquam, ducimus quas dolor!</p>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <header class="bg-brand-900 text-white sticky top-0 z-50 shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="text-xl font-semibold tracking-wide">Apex Capital Partners</a>
+        <button id="menu-btn" class="md:hidden inline-flex items-center justify-center p-2 rounded hover:bg-brand-800 focus:outline-none" aria-label="Toggle menu">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+        <nav class="hidden md:flex space-x-8 text-sm font-medium">
+          <a href="index.html" class="text-white border-b-2 border-blue-400 pb-1">Home</a>
+          <a href="about.html" class="text-slate-300 hover:text-white transition">About</a>
+          <a href="contact.html" class="text-slate-300 hover:text-white transition">Contact</a>
+        </nav>
+      </div>
+    </div>
+    <nav id="mobile-menu" class="md:hidden hidden border-t border-brand-800 bg-brand-900">
+      <div class="px-4 py-3 space-y-2">
+        <a href="index.html" class="block py-2 text-white font-medium">Home</a>
+        <a href="about.html" class="block py-2 text-slate-300 hover:text-white">About</a>
+        <a href="contact.html" class="block py-2 text-slate-300 hover:text-white">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bg-gradient-to-br from-brand-900 via-brand-800 to-brand-700 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="uppercase tracking-widest text-blue-300 text-sm font-semibold mb-4">Investment Management</p>
+          <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-6">Disciplined strategies for lasting growth.</h1>
+          <p class="text-lg text-slate-200 mb-8 max-w-xl">We help institutions and families preserve and grow capital through research-driven portfolio management, risk discipline, and a long-term perspective.</p>
+          <div class="flex flex-wrap gap-4">
+            <a href="contact.html" class="inline-flex items-center justify-center px-6 py-3 rounded-md bg-blue-500 hover:bg-blue-600 font-semibold transition">Schedule a Consultation</a>
+            <a href="about.html" class="inline-flex items-center justify-center px-6 py-3 rounded-md border border-slate-400 hover:bg-white/10 font-semibold transition">Learn About Us</a>
+          </div>
+        </div>
+        <div class="bg-white/10 backdrop-blur rounded-xl p-8 border border-white/20">
+          <h2 class="text-xl font-semibold mb-6">At a Glance</h2>
+          <dl class="grid grid-cols-2 gap-6">
+            <div>
+              <dt class="text-slate-300 text-sm">Assets Advised</dt>
+              <dd class="text-3xl font-bold mt-1">$4.2B</dd>
+            </div>
+            <div>
+              <dt class="text-slate-300 text-sm">Years of Experience</dt>
+              <dd class="text-3xl font-bold mt-1">25+</dd>
+            </div>
+            <div>
+              <dt class="text-slate-300 text-sm">Client Retention</dt>
+              <dd class="text-3xl font-bold mt-1">97%</dd>
+            </div>
+            <div>
+              <dt class="text-slate-300 text-sm">Global Markets</dt>
+              <dd class="text-3xl font-bold mt-1">30+</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <h2 class="text-3xl font-bold text-brand-900 mb-4">What We Do</h2>
+          <p class="text-slate-600">A focused set of services designed to align investment decisions with your objectives and risk tolerance.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-8">
+            <div class="w-12 h-12 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center mb-5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+            </div>
+            <h3 class="text-xl font-semibold text-brand-900 mb-3">Portfolio Management</h3>
+            <p class="text-slate-600">Diversified, research-led portfolios tailored to your time horizon, liquidity needs, and growth targets.</p>
+          </div>
+          <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-8">
+            <div class="w-12 h-12 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center mb-5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 class="text-xl font-semibold text-brand-900 mb-3">Risk & Wealth Advisory</h3>
+            <p class="text-slate-600">Prudent risk frameworks and advisory services to protect capital through changing market conditions.</p>
+          </div>
+          <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-8">
+            <div class="w-12 h-12 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center mb-5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/></svg>
+            </div>
+            <h3 class="text-xl font-semibold text-brand-900 mb-3">Global Opportunities</h3>
+            <p class="text-slate-600">Access to opportunities across asset classes and geographies with disciplined due diligence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-16 lg:py-20 border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold text-brand-900 mb-4">Our Investment Philosophy</h2>
+          <p class="text-slate-600 mb-4">We believe consistent outcomes come from patience, rigorous analysis, and alignment with client goals. Our process emphasizes quality, valuation discipline, and risk awareness over short-term speculation.</p>
+          <ul class="space-y-3 text-slate-700">
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-3">&#10003;</span>Research-driven decisions grounded in fundamentals</li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-3">&#10003;</span>Transparent reporting and clear communication</li>
+            <li class="flex items-start"><span class="text-blue-600 font-bold mr-3">&#10003;</span>Long-term partnerships built on trust</li>
+          </ul>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg border border-slate-200">
+          <img src="img/investment-business-budget-credit-costs-concept_53876-13720.avif" alt="Modern financial district skyline" class="w-full h-80 object-cover">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-brand-900 text-slate-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-white font-semibold text-lg mb-3">Apex Capital Partners</h3>
+        <p class="text-sm">Disciplined investment management for institutions and families.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Explore</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-white">Home</a></li>
+          <li><a href="about.html" class="hover:text-white">About</a></li>
+          <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Contact</h4>
+        <p class="text-sm">500 Market Street, Suite 2400<br>San Francisco, CA 94105</p>
+        <p class="text-sm mt-2">info@apexcapital.example<br>+1 (415) 555-0198</p>
+      </div>
+    </div>
+    <div class="border-t border-brand-800 text-center text-sm py-4 text-slate-400">&copy; <span id="year"></span> Apex Capital Partners. All rights reserved.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

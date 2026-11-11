@@ -1,18 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Apex Capital Partners</title>
+  <meta name="description" content="Learn about Apex Capital Partners, our mission, values, and leadership team.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              900: '#0b1b33',
+              800: '#11284d',
+              700: '#163a6b',
+              500: '#2563eb'
+            }
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus sed temporibus ab, dolore praesentium, consectetur inventore doloribus culpa adipisci eos voluptatem dolor nobis corporis quibusdam reiciendis quia ex et labore!</p>
-    <ol class="bg-red-400 text-blue-100">
-        <li>Muneeb</li>
-        <li>Haseeb</li>
-        <li>Ayan</li>
-    </ol>
-    <img class="border border-red-500 m-1" 
-    src="img/photo-1580273916550-e323be2ae537.avif"/>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <header class="bg-brand-900 text-white sticky top-0 z-50 shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="text-xl font-semibold tracking-wide">Apex Capital Partners</a>
+        <button id="menu-btn" class="md:hidden inline-flex items-center justify-center p-2 rounded hover:bg-brand-800 focus:outline-none" aria-label="Toggle menu">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+        <nav class="hidden md:flex space-x-8 text-sm font-medium">
+          <a href="index.html" class="text-slate-300 hover:text-white transition">Home</a>
+          <a href="about.html" class="text-white border-b-2 border-blue-400 pb-1">About</a>
+          <a href="contact.html" class="text-slate-300 hover:text-white transition">Contact</a>
+        </nav>
+      </div>
+    </div>
+    <nav id="mobile-menu" class="md:hidden hidden border-t border-brand-800 bg-brand-900">
+      <div class="px-4 py-3 space-y-2">
+        <a href="index.html" class="block py-2 text-slate-300 hover:text-white">Home</a>
+        <a href="about.html" class="block py-2 text-white font-medium">About</a>
+        <a href="contact.html" class="block py-2 text-slate-300 hover:text-white">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bg-brand-900 text-white py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="uppercase tracking-widest text-blue-300 text-sm font-semibold mb-3">About Us</p>
+        <h1 class="text-4xl sm:text-5xl font-bold mb-6">Built on trust, guided by discipline.</h1>
+        <p class="text-lg text-slate-200 max-w-3xl">Founded in 1999, Apex Capital Partners is an independent investment firm serving institutions, families, and entrepreneurs. We combine deep market insight with a commitment to long-term client partnerships.</p>
+      </div>
+    </section>
+
+    <section class="py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-8">
+          <h2 class="text-2xl font-bold text-brand-900 mb-4">Our Mission</h2>
+          <p class="text-slate-600 leading-relaxed">To deliver thoughtful investment solutions that help our clients achieve durable financial outcomes. We pursue this mission through rigorous research, prudent risk management, and a culture of accountability.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-8">
+          <h2 class="text-2xl font-bold text-brand-900 mb-4">Our Vision</h2>
+          <p class="text-slate-600 leading-relaxed">To be the most trusted partner for long-term capital growth, recognized for integrity, performance discipline, and an unwavering focus on client interests across market cycles.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-16 lg:py-20 border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <h2 class="text-3xl font-bold text-brand-900 mb-4">Our Values</h2>
+          <p class="text-slate-600">Principles that shape our decisions and define how we serve our clients.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="p-6 rounded-lg bg-slate-50 border border-slate-200">
+            <h3 class="font-semibold text-brand-900 mb-2">Integrity</h3>
+            <p class="text-sm text-slate-600">We act in our clients' best interests with transparency and accountability.</p>
+          </div>
+          <div class="p-6 rounded-lg bg-slate-50 border border-slate-200">
+            <h3 class="font-semibold text-brand-900 mb-2">Discipline</h3>
+            <p class="text-sm text-slate-600">A consistent, repeatable process guides every investment decision we make.</p>
+          </div>
+          <div class="p-6 rounded-lg bg-slate-50 border border-slate-200">
+            <h3 class="font-semibold text-brand-900 mb-2">Stewardship</h3>
+            <p class="text-sm text-slate-600">We treat client capital with care and a long-term perspective.</p>
+          </div>
+          <div class="p-6 rounded-lg bg-slate-50 border border-slate-200">
+            <h3 class="font-semibold text-brand-900 mb-2">Excellence</h3>
+            <p class="text-sm text-slate-600">Continuous improvement and deep expertise drive our work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <h2 class="text-3xl font-bold text-brand-900 mb-4">Leadership Team</h2>
+          <p class="text-slate-600">Experienced professionals committed to thoughtful capital allocation and client service.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-8 text-center">
+            <div class="w-20 h-20 mx-auto rounded-full bg-brand-800 text-white flex items-center justify-center text-xl font-semibold mb-4">ER</div>
+            <h3 class="text-lg font-semibold text-brand-900">Elena Ross</h3>
+            <p class="text-blue-700 text-sm font-medium mb-3">Chief Executive Officer</p>
+            <p class="text-sm text-slate-600">Leads firm strategy and client partnerships with over 20 years in asset management.</p>
+          </div>
+          <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-8 text-center">
+            <div class="w-20 h-20 mx-auto rounded-full bg-brand-800 text-white flex items-center justify-center text-xl font-semibold mb-4">MC</div>
+            <h3 class="text-lg font-semibold text-brand-900">Michael Chen</h3>
+            <p class="text-blue-700 text-sm font-medium mb-3">Chief Investment Officer</p>
+            <p class="text-sm text-slate-600">Oversees portfolio construction, research, and risk management across strategies.</p>
+          </div>
+          <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-8 text-center">
+            <div class="w-20 h-20 mx-auto rounded-full bg-brand-800 text-white flex items-center justify-center text-xl font-semibold mb-4">SP</div>
+            <h3 class="text-lg font-semibold text-brand-900">Sarah Patel</h3>
+            <p class="text-blue-700 text-sm font-medium mb-3">Head of Client Advisory</p>
+            <p class="text-sm text-slate-600">Guides families and institutions through planning, governance, and wealth strategy.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-brand-900 text-slate-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-white font-semibold text-lg mb-3">Apex Capital Partners</h3>
+        <p class="text-sm">Disciplined investment management for institutions and families.</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Explore</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-white">Home</a></li>
+          <li><a href="about.html" class="hover:text-white">About</a></li>
+          <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Contact</h4>
+        <p class="text-sm">500 Market Street, Suite 2400<br>San Francisco, CA 94105</p>
+        <p class="text-sm mt-2">info@apexcapital.example<br>+1 (415) 555-0198</p>
+      </div>
+    </div>
+    <div class="border-t border-brand-800 text-center text-sm py-4 text-slate-400">&copy; <span id="year"></span> Apex Capital Partners. All rights reserved.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
